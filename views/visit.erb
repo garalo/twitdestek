@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ziyaretçiler</title>
+</head>
+
+<body>
+<h1>Sizin Görüşleriniz</h1>
+
+<form action="/visit" method="POST">
+	<div class="form-group">
+    	<label>İsminiz ve e-mailiniz</label>
+    	<input name="username" type="text" class="form-control" placeholder="İsminizi ve e-mail Adresinizi Giriniz">
+  </div>
+
+<div class="form-group">
+    	<label>Telefon No</label>
+    	<input name="phone" type="text" class="form-control" placeholder="Telefon No Giriniz">
+</div>
+
+<div class="form-group">
+    	<label>Tarihi</label>
+    	<input name="date_time" type="text" class="form-control" placeholder="Zamanı ve Tarihi Giriniz">
+  </div>
+<div class="form-group">
+  <label for="sel1">Ne hakkında?</label>
+  <select name="master" class="form-control" id="sel1">
+    <option>Çok iyi</option>
+    <option>Bende istiyorum</option>
+    <option>İşe yaramaz</option>
+  </select>
+</div>
+  <button type="submit" class="btn btn-primary">Gönder</button>
+</form>
+
+</body>
+</html>
